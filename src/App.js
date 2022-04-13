@@ -1,9 +1,12 @@
-import './App.css';
+import "./App.css";
+import Header from "./Components/Header/Header.js";
+import Home from "./Components/Home/Home.js";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Header/>
+      <Home/>
     </div>
   );
 }
