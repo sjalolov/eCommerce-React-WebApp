@@ -5,11 +5,10 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import StoreIcon from "@mui/icons-material/Store";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Link } from "react-router-dom";
-import {useStateValue} from "../StateProvider/StateProvider"
+import { useStateValue } from "../StateProvider/StateProvider";
 
 export default function Header() {
-
-  const [{basket}, dispatch] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
 
   return (
     <div className="header">
@@ -24,10 +23,12 @@ export default function Header() {
         <SearchOutlinedIcon className="header_searchIcon" />
       </div>
       <div className="header_nav">
-        <div className="header_item">
-          <span className="header_LineOne">Hello User</span>
-          <span className="header_LineTwo">Login</span>
-        </div>
+        <Link to="/login" style={{ textDecoration: "none" }}>
+          <div className="header_item">
+            <span className="header_LineOne">Hello User</span>
+            <span className="header_LineTwo">Login</span>
+          </div>
+        </Link>
         <div className="header_item">
           <span className="header_LineOne">Your</span>
           <span className="header_LineTwo">Shop</span>
@@ -35,7 +36,9 @@ export default function Header() {
         <Link to="/checkout" style={{ textDecoration: "none" }}>
           <div className="itemBasket">
             <ShoppingBasketIcon />
-            <span className="header_LineTwo nav_basketCount">{basket.length}</span>
+            <span className="header_LineTwo nav_basketCount">
+              {basket.length}
+            </span>
           </div>
         </Link>
       </div>
