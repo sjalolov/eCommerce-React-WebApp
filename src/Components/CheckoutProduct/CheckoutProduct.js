@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./CheckoutProduct.css";
 import { useStateValue } from "../StateProvider/StateProvider";
 
 export default function CheckoutProduct({ id, title, image, price, rating }) {
   
-  // eslint-disable-next-line no-unused-vars
+
   const [{basket}, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
