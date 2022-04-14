@@ -8,7 +8,7 @@ export default function CheckoutProduct({ id, title, image, price, rating }) {
         <img src="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg" alt="" className="checkout_product_image" />
 
           <div className="checkout_product_info">
-            <p>Laptop Bag</p>
+            <p>Laptop Bag Laptop Bag Laptop Bag Laptop Bag Laptop Bag Laptop Bag </p>
             <p className="checkout_product_price">
               <small>$</small>
               <strong>300</strong>

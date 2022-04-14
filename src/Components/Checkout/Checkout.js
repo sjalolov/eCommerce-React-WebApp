@@ -13,6 +13,8 @@ export default function Checkout() {
             <h2 className="checkout_title">Your Shop Cart</h2>
           </div>
           <CheckoutProduct/>
+          <CheckoutProduct/>
+          <CheckoutProduct/>
         </div>
         <div className="checkout_right">
             <Subtotal/>
