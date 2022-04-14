@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./Header.css";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";

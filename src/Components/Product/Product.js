@@ -4,6 +4,7 @@ import { useStateValue } from "../StateProvider/StateProvider";
 
 export default function Product({id, title, image, price, rating}) {
   
+// eslint-disable-next-line no-unused-vars
 const [state, dispatch] = useStateValue();
 
 const addToBasket = () => {
@@ -29,7 +30,7 @@ const addToBasket = () => {
             <strong>{price}</strong>
           </p>
           <div className="product_rating">
-            {Array(rating).fill().map((_,i) => (
+            {Array(rating).fill().map((_) => (
               <p>&#11088;</p>
             ))}
           </div>

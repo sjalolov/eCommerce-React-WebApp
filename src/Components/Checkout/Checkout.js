@@ -5,6 +5,7 @@ import Subtotal from "../Subtotal/Subtotal.js";
 import { useStateValue } from "../StateProvider/StateProvider";
 
 export default function Checkout() {
+  // eslint-disable-next-line no-unused-vars
   const [{ basket }, dispatch] = useStateValue();
 
   return (
